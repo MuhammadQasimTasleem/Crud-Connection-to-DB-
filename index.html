@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>CRUD Operations</h1>
+
+<div class="container">
+    <form id="create-user-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+        </div>
+        <button type="submit">Create User</button>
+    </form>
+
+    <div>
+        <input type="text" id="user-id" placeholder="Enter User ID to search">
+        <button id="search-user-btn">Search User</button>
+    </div>
+
+    <h2>Users</h2>
+    <div id="user-list" class="user-list"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
